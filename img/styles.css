@@ -183,4 +183,50 @@ h1 {
     transition: box-shadow 0.4s ease;
   }
 
-  
+  /* Планшет: ширина до 1024px */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column; /* блоки йдуть один під одним */
+        align-items: center;
+        padding: 20px;
+    }
+
+    .left-block, .image {
+        max-width: 90%; /* трохи менше ширина */
+    }
+
+    .image img, .imag img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+/* Телефон: ширина до 600px */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .left-block, .image {
+        max-width: 100%;
+    }
+
+    .image img, .imag img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text h1 {
+        font-size: 28px; /* менший заголовок на маленькому екрані */
+    }
+
+    .text-p {
+        font-size: 16px; /* текст трохи менший */
+    }
+}
