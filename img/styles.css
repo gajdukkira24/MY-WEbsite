@@ -212,12 +212,16 @@ h1 {
         flex-direction: column;
         padding: 15px;
     }
+    .web-ul-lisst {
+        flex-direction: column;
+        padding: 15px;
+    }
 
     .left-block, .image {
         max-width: 100%;
     }
 
-    .image img, .imag img {
+    .image img, .imag img, .imges img  {
         width: 100%;
         height: auto;
     }
