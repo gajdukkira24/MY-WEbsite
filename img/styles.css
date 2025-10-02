@@ -178,11 +178,11 @@ h1 {
   }
   
   .image img:hover, .imag img:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    box-shadow: 1 30px -40px rgba(0,0,0,0.5);
   }
   .imges img:hover{
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-    transition: box-shadow 0.4s ease;
+    box-shadow: 0 30px 40px rgba(0,0,0,0.5);
+    transition: box-shadow 0.5s ease;
   }
 
   /* Планшет: ширина до 1024px */
@@ -236,3 +236,40 @@ h1 {
         font-size: 16px; /* текст трохи менший */
     }
 }
+/* Стиль меню */
+.web-ul-lisst {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+  
+  /* Бургер кнопка */
+  .burger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Адаптив під телефон */
+  @media (max-width: 768px) {
+    .web-ul-lisst {
+      display: none; /* ховаємо меню */
+      flex-direction: column;
+      background-color: #154834;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 15px 0;
+    }
+  
+    .web-ul-lisst.show {
+      display: flex; /* показуємо при кліку */
+    }
+  
+    .burger {
+      display: block; 
+    }
+  }
